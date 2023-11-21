@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/second"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="306dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="22dp"
+        android:drawableLeft="@drawable/baseline_person_pin_24"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/etemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/baseline_email_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etusername"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/etMedicineName"
+        android:layout_width="306dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+
+        android:drawableLeft="@drawable/baseline_medication_24"
+        android:ems="10"
+        android:hint="MedicineName"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etemail"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etquantity"
+        android:layout_width="306dp"
+        android:layout_height="51dp"
+        android:drawableLeft="@drawable/baseline_production_quantity_limits_24"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMedicineName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="303dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="584dp"
+        android:text="Online PHARMACY"
+        android:textColor="#3F51B5"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="67dp"
+        android:ems="10"
+        android:hint="Age"
+        android:drawableLeft="@drawable/baseline_settings_accessibility_24"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etquantity" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="228dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="64dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintVertical_bias="0.419" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
